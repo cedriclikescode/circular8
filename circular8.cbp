@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="circular8" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/circular8" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Option projectCompilerOptionsRelation="2" />
+				<Compiler>
+					<Add option="-Wshadow" />
+					<Add option="-Winit-self" />
+					<Add option="-Wcast-align" />
+					<Add option="-Winline" />
+					<Add option="-Wunreachable-code" />
+					<Add option="-Wswitch-enum" />
+					<Add option="-Wswitch-default" />
+					<Add option="-Wmain" />
+					<Add option="-pedantic" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-std=c99" />
+					<Add option="-ggdb" />
+					<Add option="-g" />
+					<Add option="`pkg-config sdl3 --cflags`" />
+					<Add option="-Wformat=2" />
+					<Add option="-Wno-format-nonliteral" />
+					<Add option="-Wshift-overflow=2" />
+					<Add option="-Wduplicated-cond" />
+					<Add option="-Winvalid-pch" />
+					<Add option="-fstack-protector-all" />
+					<Add option="-fno-sanitize-recover" />
+					<Add option="-fsanitize=undefined" />
+					<Add option="-fsanitize=bounds-strict" />
+					<Add option="-fsanitize-recover=all" />
+					<Add option="-pipe" />
+					<Add option="-DCircular8_ENABLE_CONTROLLER" />
+					<Add option="-DCircular8_ENABLE_FFmpeg" />
+					<Add directory="src" />
+				</Compiler>
+				<Linker>
+					<Add option="`pkg-config sdl3 --libs`" />
+					<Add option="-lSDL3_ttf" />
+					<Add option="-lSDL3_image" />
+					<Add option="-lSDL3_mixer" />
+					<Add option="-lavformat" />
+					<Add option="-lavcodec" />
+					<Add option="-lavutil" />
+					<Add option="-lm" />
+					<Add option="-fstack-protector-all" />
+					<Add option="-fno-sanitize-recover" />
+					<Add option="-fsanitize=undefined" />
+					<Add option="-fsanitize=bounds-strict" />
+					<Add option="-fsanitize-recover=all" />
+					<Add option="-pipe" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/circular8" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add option="-Wshadow" />
+					<Add option="-Wcast-align" />
+					<Add option="-Winline" />
+					<Add option="-Wunreachable-code" />
+					<Add option="-Wswitch-enum" />
+					<Add option="-Wswitch-default" />
+					<Add option="-Wmain" />
+					<Add option="-pedantic" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-std=c99" />
+					<Add option="-ggdb" />
+					<Add option="-g" />
+					<Add option="`pkg-config sdl3 --cflags`" />
+					<Add option="-Wformat=2" />
+					<Add option="-Wno-format-nonliteral" />
+					<Add option="-Wshift-overflow=2" />
+					<Add option="-Wduplicated-cond" />
+					<Add option="-fstack-protector-strong" />
+					<Add option="-fPIE" />
+					<Add option="-D_FORTIFY_SOURCE=2" />
+					<Add option="-DNDEBUG" />
+					<Add option="-DCircular8_ENABLE_CONTROLLER" />
+					<Add option="-DCircular8_ENABLE_FFmpeg" />
+					<Add directory="src" />
+				</Compiler>
+				<Linker>
+					<Add option="-O2" />
+					<Add option="`pkg-config sdl3 --libs`" />
+					<Add option="-lSDL3_ttf" />
+					<Add option="-lSDL3_image" />
+					<Add option="-lSDL3_mixer" />
+					<Add option="-lavformat" />
+					<Add option="-lavcodec" />
+					<Add option="-lavutil" />
+					<Add option="-lm" />
+					<Add option="-fstack-protector-strong" />
+					<Add option="-pie" />
+					<Add option="-Wl,-z,relro,-z,now" />
+				</Linker>
+			</Target>
+			<Target title="Win32-Debug">
+				<Option output="bin/Win32Debug/circular8" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Win32Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wshadow" />
+					<Add option="-Wcast-align" />
+					<Add option="-Wunreachable-code" />
+					<Add option="-Wswitch-enum" />
+					<Add option="-Wswitch-default" />
+					<Add option="-Wmain" />
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-std=c99" />
+					<Add option="-ggdb" />
+					<Add option="-g" />
+					<Add option="`pkg-config sdl3 --cflags`" />
+					<Add option="-Wformat=2" />
+					<Add option="-Wno-format-nonliteral" />
+					<Add option="-Wlogical-op" />
+					<Add option="-Wshift-overflow=2" />
+					<Add option="-Wduplicated-cond" />
+					<Add option="-Winvalid-pch" />
+					<Add option="-ftree-vrp" />
+					<Add option="-Warray-bounds=2" />
+					<Add option="-Wno-alloc-size" />
+					<Add option="-Wno-sign-compare" />
+					<Add option="-pipe" />
+					<Add option="-D_FORTIFY_SOURCE=1" />
+					<Add option="-DWIN32_LEAN_AND_MEAN" />
+					<Add option="-DNOSERVICE" />
+					<Add option="-DNOIME" />
+					<Add option="-DNOATOM" />
+					<Add option="-DNOGDI" />
+					<Add option="-DNOGDICAPMASKS" />
+					<Add option="-DNOMETAFILE" />
+					<Add option="-DNOMINMAX" />
+					<Add option="-DNOMSG" />
+					<Add option="-DNOOPENFILE" />
+					<Add option="-DNOSCROLL" />
+					<Add option="-DNOSOUND" />
+					<Add option="-DNOSYSMETRICS" />
+					<Add option="-DNOTEXTMETRIC" />
+					<Add option="-DNOWH" />
+					<Add option="-DNOCOMM" />
+					<Add option="-DNOKANJI" />
+					<Add option="-DNOCRYPT" />
+					<Add option="-DNOMCX" />
+					<Add option="-DCircular8_ENABLE_CONTROLLER" />
+					<Add option="-DCircular8_ENABLE_FFmpeg" />
+					<Add directory="clibs/SDL3/include" />
+					<Add directory="clibs/SDL3_image/include" />
+					<Add directory="clibs/SDL3_mixer/include" />
+					<Add directory="clibs/SDL3_ttf/include" />
+					<Add directory="src" />
+					<Add directory="clibs/ffmpeg/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lSDL3" />
+					<Add option="-lSDL3_ttf" />
+					<Add option="-lSDL3_image" />
+					<Add option="-lSDL3_mixer" />
+					<Add option="-lavformat" />
+					<Add option="-lavcodec" />
+					<Add option="-lavutil" />
+					<Add option="-lm" />
+					<Add directory="clibs/SDL3/lib" />
+					<Add directory="clibs/SDL3_image/lib" />
+					<Add directory="clibs/SDL3_mixer/lib" />
+					<Add directory="clibs/SDL3_ttf/lib" />
+					<Add directory="clibs/ffmpeg/lib" />
+				</Linker>
+			</Target>
+			<Target title="Clang-Win-Dev">
+				<Option output="bin/Win32ClangDev/circular8" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Win32ClangDev/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-Wall" />
+					<Add option="-std=c99" />
+					<Add option="-g" />
+					<Add option="`pkg-config sdl3 --cflags`" />
+					<Add option="-Wshadow" />
+					<Add option="-Wunreachable-code" />
+					<Add option="-Wswitch-enum" />
+					<Add option="-Wmain" />
+					<Add option="-Wextra" />
+					<Add option="-Wformat" />
+					<Add option="-Wshift-overflow" />
+					<Add option="-pipe" />
+					<Add option="-D_FORTIFY_SOURCE=1" />
+					<Add option="-DWIN32_LEAN_AND_MEAN" />
+					<Add option="-DNOSERVICE" />
+					<Add option="-DNOIME" />
+					<Add option="-DNOATOM" />
+					<Add option="-DNOGDI" />
+					<Add option="-DNOGDICAPMASKS" />
+					<Add option="-DNOMETAFILE" />
+					<Add option="-DNOMINMAX" />
+					<Add option="-DNOMSG" />
+					<Add option="-DNOOPENFILE" />
+					<Add option="-DNOSCROLL" />
+					<Add option="-DNOSOUND" />
+					<Add option="-DNOSYSMETRICS" />
+					<Add option="-DNOTEXTMETRIC" />
+					<Add option="-DNOWH" />
+					<Add option="-DNOCOMM" />
+					<Add option="-DNOKANJI" />
+					<Add option="-DNOCRYPT" />
+					<Add option="-DNOMCX" />
+					<Add option="-DCircular8_ENABLE_CONTROLLER" />
+					<Add option="-DCircular8_ENABLE_FFmpeg" />
+					<Add directory="clibs/SDL3/include" />
+					<Add directory="clibs/SDL3_image/include" />
+					<Add directory="clibs/SDL3_mixer/include" />
+					<Add directory="clibs/SDL3_ttf/include" />
+					<Add directory="src" />
+					<Add directory="clibs/ffmpeg/include" />
+				</Compiler>
+				<Linker>
+					<Add option="-lSDL3" />
+					<Add option="-lSDL3_ttf" />
+					<Add option="-lSDL3_image" />
+					<Add option="-lSDL3_mixer" />
+					<Add option="-lavformat" />
+					<Add option="-lavcodec" />
+					<Add option="-lavutil" />
+					<Add option="-lm" />
+					<Add directory="clibs/SDL3/lib" />
+					<Add directory="clibs/SDL3_image/lib" />
+					<Add directory="clibs/SDL3_mixer/lib" />
+					<Add directory="clibs/SDL3_ttf/lib" />
+					<Add directory="clibs/ffmpeg/lib" />
+				</Linker>
+			</Target>
+			<Target title="Clang-Dev">
+				<Option output="bin/ClangDev/circular8" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/ClangDev/" />
+				<Option type="1" />
+				<Option compiler="clang" />
+				<Compiler>
+					<Add option="-pedantic" />
+					<Add option="-Wall" />
+					<Add option="-std=c99" />
+					<Add option="-Wshadow" />
+					<Add option="-Wunreachable-code" />
+					<Add option="-Wswitch-enum" />
+					<Add option="-Wmain" />
+					<Add option="-Wextra" />
+					<Add option="-g" />
+					<Add option="`pkg-config sdl3 --cflags`" />
+					<Add option="-fstack-protector-all" />
+					<Add option="-fno-sanitize-recover" />
+					<Add option="-Wshift-overflow" />
+					<Add option="-Wformat" />
+					<Add option="-Wno-incompatible-pointer-types-discards-qualifiers" />
+					<Add option="-Werror=extern-initializer" />
+					<Add option="-DCircular8_ENABLE_CONTROLLER" />
+					<Add option="-DCircular8_ENABLE_FFmpeg" />
+					<Add directory="src" />
+				</Compiler>
+				<Linker>
+					<Add option="-fno-sanitize-recover" />
+					<Add option="-fstack-protector-all" />
+					<Add option="`pkg-config sdl3 --libs`" />
+					<Add option="-lSDL3_ttf" />
+					<Add option="-lSDL3_image" />
+					<Add option="-lSDL3_mixer" />
+					<Add option="-lavformat" />
+					<Add option="-lavcodec" />
+					<Add option="-lavutil" />
+					<Add option="-lm" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Werror-implicit-function-declaration" />
+			<Add option="-D_TIME_BITS=64" />
+			<Add option="-D_FILE_OFFSET_BITS=64" />
+			<Add option="-D_DEFAULT_SOURCE" />
+			<Add option="-DINI_MAX_LINE=1024" />
+		</Compiler>
+		<Unit filename="src/controller/led.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/controller/led.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/controller/touch.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/controller/touch.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/events.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/events.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/everything.c">
+			<Option compilerVar="CC" />
+			<Option target="Win32-Debug" />
+			<Option target="Clang-Win-Dev" />
+		</Unit>
+		<Unit filename="src/game/chart.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/chart.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/difficultyselect.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/difficultyselect.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/ingame.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/ingame.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/mainmenu.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/mainmenu.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/options.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/options.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/profileselect.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/profileselect.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/rendersong.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/rendersong.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/scorescreen.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/scorescreen.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/songselect.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/game/songselect.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/gameinit.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/gameinit.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/language.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/language.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/load.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/load.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/main.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/main.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/miscutils.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/miscutils.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/render.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/render.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/texture.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/texture.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/thirdparty/SHA-256/sha256.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/thirdparty/SHA-256/sha256.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/thirdparty/inih/ini.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/thirdparty/inih/ini.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/thirdparty/serial/serial.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/thirdparty/serial/serial.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/thirdparty/stb/stb_image_resize2.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/thirdparty/stb/stb_rect_pack.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/video.c">
+			<Option compilerVar="CC" />
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Unit filename="src/video.h">
+			<Option target="Clang-Dev" />
+			<Option target="Debug" />
+			<Option target="Release" />
+		</Unit>
+		<Extensions>
+			<lib_finder disable_auto="1" />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>

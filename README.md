@@ -1,4 +1,9 @@
 # Circular8
+<p align="center">
+    <img src="screenshot1.png" alt="Main menu" width="40%">
+    <img src="screenshot2.jpg" alt="Sample song gameplay" width="40%">
+</p>
+
 A lightweight player/simulator compatible with Simai (maidata.txt) files.
 
 > [!NOTE]
